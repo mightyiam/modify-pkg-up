@@ -11,7 +11,7 @@
     "ava": "^0.24.0",
     "is-promise": "^2.1.0",
     "mock-require": "^2.0.0",
-    "simple-spy": "^2.0.4",
+    "simple-spy": "^2.2.1",
     "standard": "^10.0.0"
   },
   "scripts": {
