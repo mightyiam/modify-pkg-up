@@ -4,7 +4,7 @@
   "description": "Helps you modify nearest `package.json`",
   "main": "lib/index.js",
   "dependencies": {
-    "read-pkg-up": "^3.0.0",
+    "read-pkg-up": "^4.0.0",
     "write-pkg": "^3.0.0"
   },
   "devDependencies": {
