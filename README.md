@@ -16,8 +16,8 @@ Helps you modify the nearest `package.json`
 
 ```js
 const modifyPkgUp = require('modify-pkg-up')
-modifyPkgUp((pkg) => {
-  return Object.assign(pkg, {
+modifyPkgUp((packageJson) => {
+  return Object.assign(packageJson, {
     //
   })
 }).then(() => console.log('done'))
