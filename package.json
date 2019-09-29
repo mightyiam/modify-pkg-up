@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "ava": "^2.4.0",
+    "husky": "^3.0.7",
     "is-promise": "^2.1.0",
     "mock-require": "^3.0.3",
     "simple-spy": "^3.0.1",
@@ -18,6 +19,11 @@
     "lint": "standard",
     "unit": "ava ${CI:+--verbose}",
     "test": "npm run lint && npm run unit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "keywords": [
     "modify",
