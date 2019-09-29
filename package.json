@@ -16,12 +16,14 @@
     "is-promise": "^2.1.0",
     "mock-require": "^3.0.3",
     "simple-spy": "^3.0.1",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "standard-version": "^7.0.0"
   },
   "scripts": {
     "lint": "standard",
     "unit": "ava",
-    "test": "npm run lint && npm run unit"
+    "test": "npm run lint && npm run unit",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
