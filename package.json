@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "read-pkg-up": "^7.0.0",
-    "write-pkg": "^3.0.0"
+    "write-pkg": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
