@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/mightyiam/modify-pkg-up/compare/v2.0.0...v3.0.0) (2019-09-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* oops. Last release, v2.0.0, from several minutes ago had a critical error. Please upgrade to this version, instead.
+
+### Bug Fixes
+
+* packageJson property ([f4e78f9](https://github.com/mightyiam/modify-pkg-up/commit/f4e78f9))
+
 ## [2.0.0](https://github.com/mightyiam/modify-pkg-up/compare/v1.0.1...v2.0.0) (2019-09-29)
 
 
