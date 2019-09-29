@@ -4,20 +4,32 @@
   "description": "Helps you modify nearest `package.json`",
   "main": "lib/index.js",
   "dependencies": {
-    "read-pkg-up": "^5.0.0",
-    "write-pkg": "^3.0.0"
+    "read-pkg-up": "^7.0.0",
+    "write-pkg": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.2.0",
+    "ava": "^2.4.0",
+    "husky": "^3.0.7",
     "is-promise": "^2.1.0",
-    "mock-require": "^3.0.0",
-    "simple-spy": "^2.2.1",
-    "standard": "^14.0.0"
+    "mock-require": "^3.0.3",
+    "simple-spy": "^3.0.1",
+    "standard": "^14.3.1",
+    "standard-version": "^7.0.0"
   },
   "scripts": {
     "lint": "standard",
-    "unit": "ava ${CI:+--verbose}",
-    "test": "npm run lint && npm run unit"
+    "unit": "ava",
+    "test": "npm run lint && npm run unit",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "keywords": [
     "modify",
